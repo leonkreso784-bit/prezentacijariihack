@@ -35,7 +35,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 .veil{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(245,248,253,.96) 0%,rgba(245,248,253,.9) 48%,rgba(245,248,253,.25) 100%)}
 .veil.full{background:rgba(245,248,253,.88)}
 .veil.hero{background:linear-gradient(90deg,rgba(245,248,253,.94) 0%,rgba(245,248,253,.82) 42%,rgba(245,248,253,0) 75%)}
-.slide>*:not(.bgv):not(.veil){position:relative;z-index:2}
+.slide>*:not(.bgv):not(.veil):not(.mk):not(.foot){position:relative;z-index:2}.foot{z-index:2}
 .glass{background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border-radius:1em;box-shadow:0 .2em 1em rgba(20,33,61,.12)}
 .city{display:grid;grid-template-columns:repeat(4,1fr);gap:.7em;margin-top:.7em}
 .city .card{padding:.7em .8em;font-size:.8em}.city .card b{display:block;font-size:1.1em}.city .card span{color:var(--mut);font-size:.85em}
@@ -49,7 +49,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 <!-- 1 HERO: video gradića (Higgsfield), cijeli grad, hotel = prvi primjer -->
 <section class="slide on">
  <video class="bgv" src="img/gradic.mp4" poster="img/gradic.jpg" muted loop playsinline preload="auto"></video><div class="veil hero"></div>
- <div class="logo"><img src="img/logo.svg" alt="">Simpolis</div>
+ <div class="logo"><img src="img/logo.png" alt="">Simpolis</div>
  <div style="margin:auto 0;max-width:62%">
   <span class="tag">Ri-Hack 4.0 · tim Pojedinci</span>
   <h1 class="huge" style="font-size:3.1em">Grad u kojem<br>učiš <span class="acc">voditi posao.</span></h1>
@@ -60,7 +60,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 </section>
 
 <!-- 2 PROBLEM -->
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag">Problem</span>
  <div class="row" style="flex:1;align-items:center;gap:2em">
   <div class="col"><p class="huge" style="font-size:2.2em">AI ti da odgovor<br>za tri sekunde.</p><p class="big" style="margin-top:.5em">Zato se ne uči. Studenti prvi put odlučuju<br>tek na praksi, kad je greška skupa.</p></div>
@@ -71,7 +71,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 <!-- 3 VIZIJA: cijeli grad (video blokova iz loga kao pozadina) -->
 <section class="slide">
  <video class="bgv" src="img/blokovi.mp4" muted loop playsinline preload="auto"></video><div class="veil"></div>
- <img class="mk" src="img/logo.svg" alt="">
+ <img class="mk" src="img/logo.png" alt="">
  <span class="tag">Vizija</span>
  <h2 style="font-size:2em;margin-bottom:.2em">Jedan grad, cijelo tržište simulacija.</h2>
  <p class="mut" style="margin:0;font-size:.85em;max-width:72%">Svaka tvrtka je svoja igra, ali sve žive u istom gradu: sklapaju ugovore, pregovaraju, ovise jedna o drugoj. Student hotelijerstva vodi hotel, student ekonomije agenciju, i dogovaraju se međusobno.</p>
@@ -89,7 +89,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 </section>
 
 <!-- 4 KAKO RADI -->
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag">Kako radi</span>
  <h2 style="font-size:1.9em;margin-bottom:.3em">AI ne daje odgovore. AI glumi svijet u kojem moraš sam odlučiti.</h2>
  <div class="three" style="margin-top:.4em">
@@ -106,7 +106,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 </section>
 
 <!-- 5 HOTEL = PRVI PRIMJER + TEHNIKA -->
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag">Prvi primjer · radi danas</span>
  <h2 style="font-size:1.7em;margin-bottom:.4em">Hotel: napravljen za 24 sata, u produkciji.</h2>
  <div class="row" style="flex:1;align-items:center;gap:1.2em;min-height:0">
@@ -123,11 +123,11 @@ tr.us td{background:#e9f0ff;font-weight:700}
 <!-- 6 NAČIN ZARADE: tri kupca (video gradića u pozadini) -->
 <section class="slide">
  <video class="bgv" src="img/gradic.mp4" poster="img/gradic.jpg" muted loop playsinline preload="auto"></video><div class="veil full"></div>
- <img class="mk" src="img/logo.svg" alt="">
+ <img class="mk" src="img/logo.png" alt="">
  <span class="tag">Način zarade</span>
  <h2 style="font-size:2em;margin-bottom:.2em">Tri kupca, isti grad.</h2>
  <div class="three" style="flex:1;align-items:stretch">
-  <div class="card glass"><b class="t">Fakulteti i škole</b><p class="mut" style="font-size:.85em">Licenca po kolegiju. Profesor vodi igru za cijeli razred, vidi razmišljanje svakog studenta.</p><p class="price" style="margin-top:.5em">≈ 1.000 € <small>/ kolegij / semestar</small></p></div>
+  <div class="card glass"><b class="t">Fakulteti i škole</b><p class="mut" style="font-size:.85em">Licenca po kolegiju. Profesor vodi igru za cijeli razred, vidi razmišljanje svakog studenta.</p><p class="price" style="margin-top:.5em">10 € <small>po studentu godišnje</small></p><p class="mut" style="font-size:.7em;margin:.2em 0 0">Fakultet s 1.250 studenata: <b style="color:var(--ink)">12.500 € / god</b></p></div>
   <div class="card glass" style="border:3px solid var(--acc)"><b class="t">Poslovni subjekti</b><p class="mut" style="font-size:.85em"><b style="color:var(--ink)">Prilagođena igra za njihov posao:</b> njihove stvarne situacije, odjeli i brojke. Onboarding i trening zaposlenika bez rizika.</p><p class="price" style="margin-top:.5em">≈ 2.500 € <small>izrada</small> + 300 € <small>/ mj</small></p></div>
   <div class="card glass"><b class="t">Pojedinci</b><p class="mut" style="font-size:.85em"><b style="color:var(--ink)">Prijaviš se, platiš, uploadaš koji posao želiš pokrenuti</b> i vježbaš ga u simulaciji. Iskustvo prije nego uložiš pravi novac.</p><p class="price" style="margin-top:.5em">9,99 € <small>/ mj</small></p><p class="price" style="margin-top:.2em">19,99 € <small>/ mj · vlastiti posao</small></p></div>
  </div>
@@ -135,7 +135,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 </section>
 
 <!-- 7 TROŠKOVNIK -->
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag">Troškovnik</span>
  <h2 style="font-size:1.9em;margin-bottom:.3em">Realno, a jeftino za pokretanje.</h2>
  <div class="row" style="flex:1;align-items:stretch;gap:1.2em">
@@ -154,10 +154,10 @@ tr.us td{background:#e9f0ff;font-weight:700}
    <p style="font-size:.7em;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:0 0 .3em;color:#b7c3dd">Prva godina, konzervativno</p>
    <table style="font-size:.68em;color:#fff">
     <tr><th style="color:#b7c3dd">Kupac</th><th style="color:#b7c3dd">Koliko</th><th style="color:#b7c3dd">Prihod</th></tr>
-    <tr><td style="border-color:#2a3a63">Kolegiji</td><td style="border-color:#2a3a63">5 × 2 semestra</td><td style="border-color:#2a3a63"><b>10.000 €</b></td></tr>
+    <tr><td style="border-color:#2a3a63">Fakultet</td><td style="border-color:#2a3a63">1.250 studenata × 10 €</td><td style="border-color:#2a3a63"><b>12.500 €</b></td></tr>
     <tr><td style="border-color:#2a3a63">Tvrtke</td><td style="border-color:#2a3a63">3 prilagođene igre</td><td style="border-color:#2a3a63"><b>18.300 €</b></td></tr>
     <tr><td style="border-color:#2a3a63">Pojedinci</td><td style="border-color:#2a3a63">200 pretplata × 6 mj</td><td style="border-color:#2a3a63"><b>≈ 15.000 €</b></td></tr>
-    <tr><td style="border-color:#2a3a63"><b>Ukupno</b></td><td style="border-color:#2a3a63"></td><td style="border-color:#2a3a63"><b style="color:#8fb3ff;font-size:1.3em">≈ 43.000 €</b></td></tr>
+    <tr><td style="border-color:#2a3a63"><b>Ukupno</b></td><td style="border-color:#2a3a63"></td><td style="border-color:#2a3a63"><b style="color:#8fb3ff;font-size:1.3em">≈ 46.000 €</b></td></tr>
     <tr><td style="border:0">Trošak AI + infrastruktura</td><td style="border:0"></td><td style="border:0"><b>pod 2.000 €</b></td></tr>
    </table>
   </div>
@@ -181,7 +181,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
 
 <!-- DODATAK ZA PITANJA -->
 
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag q">Dodatak · isti motor, drugi fakultet</span>
  <h2 style="font-size:1.75em;margin-bottom:.35em">Isti motor, drugi paket sadržaja.</h2>
  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:.9em;flex:1;min-height:0;align-items:start">
@@ -194,19 +194,19 @@ tr.us td{background:#e9f0ff;font-weight:700}
  <p class="mut" style="font-size:.5em;margin:.5em 0 0">Hotel je izrađen, ostali paketi su primjer sadržaja. Imena tvrtki su izmišljena.</p>
 </section>
 
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag q">Dodatak · demo</span>
  <h2 style="font-size:1.6em">Isti ljuti gost, tri odgovora.</h2>
  <div style="display:grid;place-items:center;flex:1"><img class="shot" src="img/sudac-cards.png" style="width:100%;max-height:13.5em;object-fit:contain;background:#f5f8fd" alt="AI sudac"></div>
 </section>
 
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag q">Dodatak · demo</span>
  <h2 style="font-size:1.6em">Svi hoteli dijele isti grad.</h2>
  <div style="display:grid;place-items:center;flex:1"><img class="shot" src="img/desk-7-grad.jpg" style="max-height:17em;width:auto;max-width:100%" alt="Grad"></div>
 </section>
 
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag q">Dodatak · Tokovi</span>
  <h2 style="font-size:1.9em;margin-bottom:.25em">AI ne misli umjesto studenta.</h2>
  <p class="mut" style="margin:0 0 .5em;font-size:.8em">Svaki broj računaju pravila igre. Otvori bilo koji rezultat i vidi zašto, korak po korak.</p>
@@ -217,7 +217,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
  </div>
 </section>
 
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag q">Dodatak · što već postoji</span>
  <h2 style="font-size:1.6em">Što već postoji</h2>
  <table style="font-size:.75em">
@@ -229,7 +229,7 @@ tr.us td{background:#e9f0ff;font-weight:700}
  </table>
 </section>
 
-<section class="slide"><img class="mk" src="img/logo.svg" alt="">
+<section class="slide"><img class="mk" src="img/logo.png" alt="">
  <span class="tag q">Dodatak · ako AI zakaže</span>
  <h2 style="font-size:1.6em">Ako AI zakaže</h2>
  <div class="lines" style="font-size:.85em">
